@@ -8,6 +8,8 @@
     <link rel="icon" type="image/x-icon" href="dist/img/polisi-ri.png" />
     <title>PRESISI POLRI | BERANDA</title>
 
+    <!-- Font Awesome 5 -->
+    <script src="https://kit.fontawesome.com/27e42df87e.js" crossorigin="anonymous"></script>
     <!-- main style -->
     <link rel="stylesheet" href="dist/css/output.css">
 </head>
@@ -16,7 +18,7 @@
     <!-- Header Start -->
     <header
         class="bg-transparent absolute top-0 left-0 w-full flex items-center justify-evenly z-index-10 transition duration-500 py-5 lg:py-4">
-        <div class="container lg:px-7">
+        <div class="container max-w-screen-xl lg:px-7">
             <div class="flex items-center justify-between relative">
                 <div class="px-4">
                     <a href="index.html" class="flex items-center">
@@ -82,7 +84,7 @@
 
     <!-- Layanan Start -->
     <section id="layanan" class="pt-5 lg:pt-12">
-        <div class="container px-4 lg:px-7 mx-auto">
+        <div class="container max-w-screen-xl px-4 lg:px-7 mx-auto">
             <h5 class="font-bold text-lg md:text-2xl text-secondary">Layanan PRESISI</h5>
             <p class="mt-2">Pilih layanan yang Anda butuhkan</p>
             <div class="grid grid-cols-4 md:grid-cols-6 mt-5 content-between gap-4 lg:gap-10">
@@ -120,7 +122,7 @@
                 </a>
                 <a class="text-center flex flex-col justify-between hover:brightness-75 transition" href="">
                     <img src="dist/img/dumas-propam.svg" alt="" class="w-full">
-                    <p class="font-bold mt-2 text-secondary">DUMAS/PROPAM</p>
+                    <p class="font-bold mt-2 text-secondary">DUMAS / PROPAM</p>
                 </a>
                 <a class="text-center flex flex-col justify-between hover:brightness-75 transition" href="">
                     <img src="dist/img/izin-keramaian.svg" alt="" class="w-full">
@@ -141,119 +143,199 @@
 
     <!-- Informasi Start -->
     <section id="informasi" class="pt-10 lg:pt-24">
-        <div class="container px-4 lg:px-7 mx-auto">
+        <div class="container max-w-screen-xl px-4 lg:px-7 mx-auto">
             <h5 class="font-bold text-lg md:text-2xl text-secondary">Apa yang baru?</h5>
             <p class="mt-2">Informasi terbaru dari polisi</p>
             <div class="grid lg:grid-cols-2 gap-4 mt-5">
                 <a href=""
-                    class="w-full bg-white rounded-xl px-5 py-3 gap-3 flex justify-between border-[0.5px] border-opacity-20 border-dark">
-                    <div class="text">
-                        <h1 class="text-lg font-bold text-secondary">Polda Sulsel Berhasil Ungkap Penyalur Bibit</h1>
-                        <p class="text-sm md:text-base">Tribatanews.polri.go.id - Makassar. Polda Sulsel masih
-                            menelusuri penyalur bibit, menyusul
-                            terungkapnya ladang ganja...</p>
-                        <p class="text-dark">19 February 2023 - 17:00 WIB</p>
+                    class="w-full bg-white rounded-xl px-5 py-3 gap-3 flex justify-between border-[0.5px] border-opacity-20 border-dark group">
+                    <div class="text flex flex-col justify-between">
+                        <div class="">
+                            <h1 class="text-lg font-bold text-secondary group-hover:text-bgdarken transition">Polda
+                                Sulsel Berhasil
+                                Ungkap Penyalur Bibit
+                            </h1>
+                            <p class="text-sm md:text-base">Tribatanews.polri.go.id - Makassar. Polda Sulsel masih
+                                menelusuri penyalur bibit, menyusul
+                                terungkapnya ladang ganja...</p>
+                        </div>
+                        <p class="text-dark text-xs md:text-sm mt-2"><i class="fa-regular fa-clock"></i> 19 February
+                            2023 - 17:00
+                            WIB
+                        </p>
                     </div>
-                    <img src="dist/img/berita.jpg" alt="" class="rounded-xl w-4/12 lg:w-2/12 object-cover">
+                    <img src="dist/img/berita.jpg" alt="" class="rounded-xl w-4/12 lg:w-3/12 object-cover">
                 </a>
                 <a href=""
-                    class="w-full bg-white rounded-xl px-5 py-3 gap-3 flex justify-between border-[0.5px] border-opacity-20 border-dark">
-                    <div class="text">
-                        <h1 class="text-lg font-bold text-secondary">Polda Sulsel Berhasil Ungkap Penyalur Bibit</h1>
-                        <p class="text-sm md:text-base">Tribatanews.polri.go.id - Makassar. Polda Sulsel masih
-                            menelusuri penyalur bibit, menyusul
-                            terungkapnya ladang ganja...</p>
-                        <p class="text-dark">19 February 2023 - 17:00 WIB</p>
+                    class="w-full bg-white rounded-xl px-5 py-3 gap-3 flex justify-between border-[0.5px] border-opacity-20 border-dark group">
+                    <div class="text flex flex-col justify-between">
+                        <div class="">
+                            <h1 class="text-lg font-bold text-secondary group-hover:text-bgdarken transition">Polda
+                                Sulsel Berhasil
+                                Ungkap Penyalur Bibit
+                            </h1>
+                            <p class="text-sm md:text-base">Tribatanews.polri.go.id - Makassar. Polda Sulsel masih
+                                menelusuri penyalur bibit, menyusul
+                                terungkapnya ladang ganja...</p>
+                        </div>
+                        <p class="text-dark text-xs md:text-sm mt-2"><i class="fa-regular fa-clock"></i> 19 February
+                            2023 - 17:00
+                            WIB
+                        </p>
                     </div>
-                    <img src="dist/img/berita.jpg" alt="" class="rounded-xl w-4/12 lg:w-2/12 object-cover">
+                    <img src="dist/img/berita.jpg" alt="" class="rounded-xl w-4/12 lg:w-3/12 object-cover">
                 </a>
                 <a href=""
-                    class="w-full bg-white rounded-xl px-5 py-3 gap-3 flex justify-between border-[0.5px] border-opacity-20 border-dark">
-                    <div class="text">
-                        <h1 class="text-lg font-bold text-secondary">Polda Sulsel Berhasil Ungkap Penyalur Bibit</h1>
-                        <p class="text-sm md:text-base">Tribatanews.polri.go.id - Makassar. Polda Sulsel masih
-                            menelusuri penyalur bibit, menyusul
-                            terungkapnya ladang ganja...</p>
-                        <p class="text-dark">19 February 2023 - 17:00 WIB</p>
+                    class="w-full bg-white rounded-xl px-5 py-3 gap-3 flex justify-between border-[0.5px] border-opacity-20 border-dark group">
+                    <div class="text flex flex-col justify-between">
+                        <div class="">
+                            <h1 class="text-lg font-bold text-secondary group-hover:text-bgdarken transition">Polda
+                                Sulsel Berhasil
+                                Ungkap Penyalur Bibit
+                            </h1>
+                            <p class="text-sm md:text-base">Tribatanews.polri.go.id - Makassar. Polda Sulsel masih
+                                menelusuri penyalur bibit, menyusul
+                                terungkapnya ladang ganja...</p>
+                        </div>
+                        <p class="text-dark text-xs md:text-sm mt-2"><i class="fa-regular fa-clock"></i> 19 February
+                            2023 - 17:00
+                            WIB
+                        </p>
                     </div>
-                    <img src="dist/img/berita.jpg" alt="" class="rounded-xl w-4/12 lg:w-2/12 object-cover">
+                    <img src="dist/img/berita.jpg" alt="" class="rounded-xl w-4/12 lg:w-3/12 object-cover">
                 </a>
                 <a href=""
-                    class="w-full bg-white rounded-xl px-5 py-3 gap-3 flex justify-between border-[0.5px] border-opacity-20 border-dark">
-                    <div class="text">
-                        <h1 class="text-lg font-bold text-secondary">Polda Sulsel Berhasil Ungkap Penyalur Bibit</h1>
-                        <p class="text-sm md:text-base">Tribatanews.polri.go.id - Makassar. Polda Sulsel masih
-                            menelusuri penyalur bibit, menyusul
-                            terungkapnya ladang ganja...</p>
-                        <p class="text-dark">19 February 2023 - 17:00 WIB</p>
+                    class="w-full bg-white rounded-xl px-5 py-3 gap-3 flex justify-between border-[0.5px] border-opacity-20 border-dark group">
+                    <div class="text flex flex-col justify-between">
+                        <div class="">
+                            <h1 class="text-lg font-bold text-secondary group-hover:text-bgdarken transition">Polda
+                                Sulsel Berhasil
+                                Ungkap Penyalur Bibit
+                            </h1>
+                            <p class="text-sm md:text-base">Tribatanews.polri.go.id - Makassar. Polda Sulsel masih
+                                menelusuri penyalur bibit, menyusul
+                                terungkapnya ladang ganja...</p>
+                        </div>
+                        <p class="text-dark text-xs md:text-sm mt-2"><i class="fa-regular fa-clock"></i> 19 February
+                            2023 - 17:00
+                            WIB
+                        </p>
                     </div>
-                    <img src="dist/img/berita.jpg" alt="" class="rounded-xl w-4/12 lg:w-2/12 object-cover">
+                    <img src="dist/img/berita.jpg" alt="" class="rounded-xl w-4/12 lg:w-3/12 object-cover">
                 </a>
                 <a href=""
-                    class="w-full bg-white rounded-xl px-5 py-3 gap-3 flex justify-between border-[0.5px] border-opacity-20 border-dark">
-                    <div class="text">
-                        <h1 class="text-lg font-bold text-secondary">Polda Sulsel Berhasil Ungkap Penyalur Bibit</h1>
-                        <p class="text-sm md:text-base">Tribatanews.polri.go.id - Makassar. Polda Sulsel masih
-                            menelusuri penyalur bibit, menyusul
-                            terungkapnya ladang ganja...</p>
-                        <p class="text-dark">19 February 2023 - 17:00 WIB</p>
+                    class="w-full bg-white rounded-xl px-5 py-3 gap-3 flex justify-between border-[0.5px] border-opacity-20 border-dark group">
+                    <div class="text flex flex-col justify-between">
+                        <div class="">
+                            <h1 class="text-lg font-bold text-secondary group-hover:text-bgdarken transition">Polda
+                                Sulsel Berhasil
+                                Ungkap Penyalur Bibit
+                            </h1>
+                            <p class="text-sm md:text-base">Tribatanews.polri.go.id - Makassar. Polda Sulsel masih
+                                menelusuri penyalur bibit, menyusul
+                                terungkapnya ladang ganja...</p>
+                        </div>
+                        <p class="text-dark text-xs md:text-sm mt-2"><i class="fa-regular fa-clock"></i> 19 February
+                            2023 - 17:00
+                            WIB
+                        </p>
                     </div>
-                    <img src="dist/img/berita.jpg" alt="" class="rounded-xl w-4/12 lg:w-2/12 object-cover">
+                    <img src="dist/img/berita.jpg" alt="" class="rounded-xl w-4/12 lg:w-3/12 object-cover">
                 </a>
                 <a href=""
-                    class="w-full bg-white rounded-xl px-5 py-3 gap-3 flex justify-between border-[0.5px] border-opacity-20 border-dark">
-                    <div class="text">
-                        <h1 class="text-lg font-bold text-secondary">Polda Sulsel Berhasil Ungkap Penyalur Bibit</h1>
-                        <p class="text-sm md:text-base">Tribatanews.polri.go.id - Makassar. Polda Sulsel masih
-                            menelusuri penyalur bibit, menyusul
-                            terungkapnya ladang ganja...</p>
-                        <p class="text-dark">19 February 2023 - 17:00 WIB</p>
+                    class="w-full bg-white rounded-xl px-5 py-3 gap-3 flex justify-between border-[0.5px] border-opacity-20 border-dark group">
+                    <div class="text flex flex-col justify-between">
+                        <div class="">
+                            <h1 class="text-lg font-bold text-secondary group-hover:text-bgdarken transition">Polda
+                                Sulsel Berhasil
+                                Ungkap Penyalur Bibit
+                            </h1>
+                            <p class="text-sm md:text-base">Tribatanews.polri.go.id - Makassar. Polda Sulsel masih
+                                menelusuri penyalur bibit, menyusul
+                                terungkapnya ladang ganja...</p>
+                        </div>
+                        <p class="text-dark text-xs md:text-sm mt-2"><i class="fa-regular fa-clock"></i> 19 February
+                            2023 - 17:00
+                            WIB
+                        </p>
                     </div>
-                    <img src="dist/img/berita.jpg" alt="" class="rounded-xl w-4/12 lg:w-2/12 object-cover">
+                    <img src="dist/img/berita.jpg" alt="" class="rounded-xl w-4/12 lg:w-3/12 object-cover">
                 </a>
                 <a href=""
-                    class="w-full bg-white rounded-xl px-5 py-3 gap-3 flex justify-between border-[0.5px] border-opacity-20 border-dark">
-                    <div class="text">
-                        <h1 class="text-lg font-bold text-secondary">Polda Sulsel Berhasil Ungkap Penyalur Bibit</h1>
-                        <p class="text-sm md:text-base">Tribatanews.polri.go.id - Makassar. Polda Sulsel masih
-                            menelusuri penyalur bibit, menyusul
-                            terungkapnya ladang ganja...</p>
-                        <p class="text-dark">19 February 2023 - 17:00 WIB</p>
+                    class="w-full bg-white rounded-xl px-5 py-3 gap-3 flex justify-between border-[0.5px] border-opacity-20 border-dark group">
+                    <div class="text flex flex-col justify-between">
+                        <div class="">
+                            <h1 class="text-lg font-bold text-secondary group-hover:text-bgdarken transition">Polda
+                                Sulsel Berhasil
+                                Ungkap Penyalur Bibit
+                            </h1>
+                            <p class="text-sm md:text-base">Tribatanews.polri.go.id - Makassar. Polda Sulsel masih
+                                menelusuri penyalur bibit, menyusul
+                                terungkapnya ladang ganja...</p>
+                        </div>
+                        <p class="text-dark text-xs md:text-sm mt-2"><i class="fa-regular fa-clock"></i> 19 February
+                            2023 - 17:00
+                            WIB
+                        </p>
                     </div>
-                    <img src="dist/img/berita.jpg" alt="" class="rounded-xl w-4/12 lg:w-2/12 object-cover">
+                    <img src="dist/img/berita.jpg" alt="" class="rounded-xl w-4/12 lg:w-3/12 object-cover">
                 </a>
                 <a href=""
-                    class="w-full bg-white rounded-xl px-5 py-3 gap-3 flex justify-between border-[0.5px] border-opacity-20 border-dark">
-                    <div class="text">
-                        <h1 class="text-lg font-bold text-secondary">Polda Sulsel Berhasil Ungkap Penyalur Bibit</h1>
-                        <p class="text-sm md:text-base">Tribatanews.polri.go.id - Makassar. Polda Sulsel masih
-                            menelusuri penyalur bibit, menyusul
-                            terungkapnya ladang ganja...</p>
-                        <p class="text-dark">19 February 2023 - 17:00 WIB</p>
+                    class="w-full bg-white rounded-xl px-5 py-3 gap-3 flex justify-between border-[0.5px] border-opacity-20 border-dark group">
+                    <div class="text flex flex-col justify-between">
+                        <div class="">
+                            <h1 class="text-lg font-bold text-secondary group-hover:text-bgdarken transition">Polda
+                                Sulsel Berhasil
+                                Ungkap Penyalur Bibit
+                            </h1>
+                            <p class="text-sm md:text-base">Tribatanews.polri.go.id - Makassar. Polda Sulsel masih
+                                menelusuri penyalur bibit, menyusul
+                                terungkapnya ladang ganja...</p>
+                        </div>
+                        <p class="text-dark text-xs md:text-sm mt-2"><i class="fa-regular fa-clock"></i> 19 February
+                            2023 - 17:00
+                            WIB
+                        </p>
                     </div>
-                    <img src="dist/img/berita.jpg" alt="" class="rounded-xl w-4/12 lg:w-2/12 object-cover">
+                    <img src="dist/img/berita.jpg" alt="" class="rounded-xl w-4/12 lg:w-3/12 object-cover">
                 </a>
                 <a href=""
-                    class="w-full bg-white rounded-xl px-5 py-3 gap-3 flex justify-between border-[0.5px] border-opacity-20 border-dark">
-                    <div class="text">
-                        <h1 class="text-lg font-bold text-secondary">Polda Sulsel Berhasil Ungkap Penyalur Bibit</h1>
-                        <p class="text-sm md:text-base">Tribatanews.polri.go.id - Makassar. Polda Sulsel masih
-                            menelusuri penyalur bibit, menyusul
-                            terungkapnya ladang ganja...</p>
-                        <p class="text-dark">19 February 2023 - 17:00 WIB</p>
+                    class="w-full bg-white rounded-xl px-5 py-3 gap-3 flex justify-between border-[0.5px] border-opacity-20 border-dark group">
+                    <div class="text flex flex-col justify-between">
+                        <div class="">
+                            <h1 class="text-lg font-bold text-secondary group-hover:text-bgdarken transition">Polda
+                                Sulsel Berhasil
+                                Ungkap Penyalur Bibit
+                            </h1>
+                            <p class="text-sm md:text-base">Tribatanews.polri.go.id - Makassar. Polda Sulsel masih
+                                menelusuri penyalur bibit, menyusul
+                                terungkapnya ladang ganja...</p>
+                        </div>
+                        <p class="text-dark text-xs md:text-sm mt-2"><i class="fa-regular fa-clock"></i> 19 February
+                            2023 - 17:00
+                            WIB
+                        </p>
                     </div>
-                    <img src="dist/img/berita.jpg" alt="" class="rounded-xl w-4/12 lg:w-2/12 object-cover">
+                    <img src="dist/img/berita.jpg" alt="" class="rounded-xl w-4/12 lg:w-3/12 object-cover">
                 </a>
                 <a href=""
-                    class="w-full bg-white rounded-xl px-5 py-3 gap-3 flex justify-between border-[0.5px] border-opacity-20 border-dark">
-                    <div class="text">
-                        <h1 class="text-lg font-bold text-secondary">Polda Sulsel Berhasil Ungkap Penyalur Bibit</h1>
-                        <p class="text-sm md:text-base">Tribatanews.polri.go.id - Makassar. Polda Sulsel masih
-                            menelusuri penyalur bibit, menyusul
-                            terungkapnya ladang ganja...</p>
-                        <p class="text-dark">19 February 2023 - 17:00 WIB</p>
+                    class="w-full bg-white rounded-xl px-5 py-3 gap-3 flex justify-between border-[0.5px] border-opacity-20 border-dark group">
+                    <div class="text flex flex-col justify-between">
+                        <div class="">
+                            <h1 class="text-lg font-bold text-secondary group-hover:text-bgdarken transition">Polda
+                                Sulsel Berhasil
+                                Ungkap Penyalur Bibit
+                            </h1>
+                            <p class="text-sm md:text-base">Tribatanews.polri.go.id - Makassar. Polda Sulsel masih
+                                menelusuri penyalur bibit, menyusul
+                                terungkapnya ladang ganja...</p>
+                        </div>
+                        <p class="text-dark text-xs md:text-sm mt-2"><i class="fa-regular fa-clock"></i> 19 February
+                            2023 - 17:00
+                            WIB
+                        </p>
                     </div>
-                    <img src="dist/img/berita.jpg" alt="" class="rounded-xl w-4/12 lg:w-2/12 object-cover">
+                    <img src="dist/img/berita.jpg" alt="" class="rounded-xl w-4/12 lg:w-3/12 object-cover">
                 </a>
             </div>
         </div>
@@ -261,8 +343,8 @@
     <!-- Informasi End -->
 
     <!-- footer start -->
-    <footer class="py-20 bg-primary mt-20">
-        <div class="container mx-auto flex flex-col lg:flex-row gap-10 lg:gap-48 justify-between px-4">
+    <footer class="pt-20 pb-10 bg-[#161616] mt-20">
+        <div class="container max-w-screen-xl mx-auto flex flex-col lg:flex-row gap-10 lg:gap-48 justify-between px-4">
             <div class="w-full lg:w-[40%]">
                 <img src="dist/img/polisi-ri.png" alt="">
                 <h1 class="text-base lg:text-lg text-white font-semibold mt-2">Kepolisian Republik Indonesia</h1>
@@ -338,6 +420,9 @@
                     </ul>
                 </div>
             </div>
+        </div>
+        <div class="container max-w-screen-xl mx-auto px-4 flex justify-center mt-10">
+            <p class="text-dark font-bold text-base">Copyright &copy; 2022 PRESISI Polri</p>
         </div>
     </footer>
     <!-- footer end -->
