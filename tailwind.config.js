@@ -12,6 +12,7 @@ module.exports = {
         bgdark: '#020C1B',
         bgdarken: '#01060f',
         txtdark: '#e5e5e5',
+        text: '#312f2f',
       },
       fontFamily: {
         poppins: ["Poppins", 'sans-serif'],
