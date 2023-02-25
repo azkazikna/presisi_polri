@@ -15,8 +15,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap"
         rel="stylesheet">
-    <!-- Modal -->
-    <link rel="stylesheet" href="dist/css/modal.css">
+    <!-- Swiper JS -->
+    <link rel="stylesheet" href="dist/css/swiper.css" />
     <!-- main style -->
     <link rel="stylesheet" href="dist/css/output.css">
     <script>
@@ -89,70 +89,65 @@
     </header>
     <!-- Header End -->
 
-    <!-- Map and Jumbotron Start -->
-    <div class="h-30v w-full bg-primary">
-    </div>
-    <div class="w-full mt-[-150px] overflow-hidden flex justify-center">
-        <div class="gmap_canvas"><iframe class="w-[90vw] md:w-[80vw] h-[200px] md:h-[300px] rounded-t-xl"
-                id="gmap_canvas"
-                src="https://maps.google.com/maps?q=SMK%20PLUS%20PELITA%20NUSANTARA&t=&z=13&ie=UTF8&iwloc=&output=embed"
-                frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
-            <div class="flex justify-between p-2 font-semibold bg-white rounded-b-xl text-sm shadow-md text-secondary">
-                <a href="" class="text-text text-xs md:text-sm">Info Lokasi Rawan</a>
-                <a href="" class="text-text text-xs md:text-sm">SELENGKAPNYA</a>
-            </div>
-            <br>
-        </div>
-    </div>
-    <!-- Map and Jumbotron End -->
-
-    <!-- Layanan Start -->
-    <section id="layanan" class="pt-5 lg:pt-12">
+    <!-- Slider Start-->
+    <section id="slide" class="pt-24 lg:pt-36">
         <div class="container max-w-screen-xl px-6 md:px-14 2xl:px-0 mx-auto">
-            <h5 class="font-bold text-base md:text-xl lg:text-2xl text-text">Layanan Control Command Center Polsek
-                Cibarusah
-            </h5>
-            <p class="mt-2 text-sm md:text-base">Pilih layanan yang Anda butuhkan</p>
-            <div
-                class="grid grid-cols-4 md:grid-cols-6 lg:grid-cols-7 xl:grid-cols-8 mt-5 content-center gap-8 lg:gap-10">
-                <a class="text-center flex flex-col justify-between hover:brightness-75 transition"
-                    data-micromodal-trigger="modal-darurat" href="javascript:;">
-                    <img src="dist/img/panggilan-darurat.svg" alt="">
-                    <p class="font-bold mt-2 text-text text-sm md:text-base">Panggilan Darurat</p>
-                </a>
-                <a class="text-center flex flex-col justify-between hover:brightness-75 transition"
-                    data-micromodal-trigger="modal-laporan" href="javascript:;">
-                    <img src="dist/img/buat-laporan.svg" alt="">
-                    <p class="font-bold mt-2 text-text text-sm md:text-base">Buat Laporan</p>
-                </a>
-                <a class="text-center flex flex-col justify-between hover:brightness-75 transition"
-                    data-micromodal-trigger="modal-skck" href="javascript:;">
-                    <img src="dist/img/skck.svg" alt="">
-                    <p class="font-bold mt-2 text-text text-sm md:text-base">SKCK</p>
-                </a>
-                <a class="text-center flex flex-col justify-between hover:brightness-75 transition" href="">
-                    <img src="dist/img/tilang.svg" alt="">
-                    <p class="font-bold mt-2 text-text text-sm md:text-base">Lalu Lintas</p>
-                </a>
-                <a class="text-center flex flex-col justify-between hover:brightness-75 transition" href="">
-                    <img src="dist/img/izin-keramaian.svg" alt="">
-                    <p class="font-bold mt-2 text-text text-sm md:text-base">Izin Keramaian</p>
-                </a>
-                <a class="text-center flex flex-col justify-between hover:brightness-75 transition" href="">
-                    <img src="dist/img/laporan-kehilangan.svg" alt="">
-                    <p class="font-bold mt-2 text-text text-sm md:text-base">Laporan Kehilangan</p>
-                </a>
+            <h5 class="font-bold text-base md:text-xl lg:text-2xl text-text">Seputar Cibarusah</h5>
+            <p class="mt-2 text-sm md:text-base mb-3">Berita lainnya seputar Cibarusah!</p>
+            <!-- Slider main container -->
+            <div class="swiper w-full rounded-xl">
+                <!-- Additional required wrapper -->
+                <div class="swiper-wrapper">
+                    <!-- Slides -->
+                    <div class="swiper-slide relative">
+                        <img src="dist/img/berita_jalan_cibarusah.jpg" alt=""
+                            class="img-slide w-full h-30v lg:h-40v object-cover rounded-xl relative">
+                        <h5 class="text-lg md:text-2xl text-white p-5 z-20 absolute left-0 top-[60%] md:top-[70%]">
+                            Pembangunan Jalan
+                            Cikarang-Cibarusah Belum
+                            Rampung</h5>
+                    </div>
+                    <div class="swiper-slide relative">
+                        <img src="dist/img/berita_satpol_pp.jpg" alt=""
+                            class="img-slide w-full h-30v lg:h-40v object-cover rounded-xl relative">
+                        <h5 class="text-lg md:text-2xl text-white p-5 z-20 absolute left-0 top-[60%] md:top-[70%]">
+                            Pembangunan Jalan
+                            Cikarang-Cibarusah Belum
+                            Rampung</h5>
+                    </div>
+                    <div class="swiper-slide relative">
+                        <img src="dist/img/berita_jalan_cibarusah.jpg" alt=""
+                            class="img-slide w-full h-30v lg:h-40v object-cover rounded-xl relative">
+                        <h5 class="text-lg md:text-2xl text-white p-5 z-20 absolute left-0 top-[60%] md:top-[70%]">
+                            Pembangunan Jalan
+                            Cikarang-Cibarusah Belum
+                            Rampung</h5>
+                    </div>
+                    <div class="swiper-slide relative">
+                        <img src="dist/img/berita_satpol_pp.jpg" alt=""
+                            class="img-slide w-full h-30v lg:h-40v object-cover rounded-xl relative">
+                        <h5 class="text-lg md:text-2xl text-white p-5 z-20 absolute left-0 top-[60%] md:top-[70%]">
+                            Pembangunan Jalan
+                            Cikarang-Cibarusah Belum
+                            Rampung</h5>
+                    </div>
+                </div>
+                <!-- If we need pagination -->
+                <div class="swiper-pagination"></div>
             </div>
         </div>
     </section>
-    <!-- Layanan End -->
+    <!-- Slider End-->
+
 
     <!-- Informasi Start -->
-    <section id="informasi" class="pt-10 lg:pt-24">
-        <div class="container max-w-screen-xl px-6 md:px-14 2xl:px-0  mx-auto">
-            <h5 class="font-bold text-base md:text-xl lg:text-2xl text-text">Apa yang baru?</h5>
-            <p class="mt-2 text-sm md:text-base">Informasi terbaru seputar Cibarusah</p>
-            <div class="grid lg:grid-cols-2 gap-4 mt-5">
+    <section id="informasi" class="mt-6 lg:pt-14">
+        <div class="container max-w-screen-xl px-6 md:px-14 2xl:px-0 mx-auto">
+            <div class="flex justify-between">
+                <h5 class="font-bold text-base md:text-xl lg:text-2xl text-text">Nasional</h5>
+                <h5 class="text-sm md:text-lg lg:text-xl text-text">Lainnya <i class="fa-solid fa-arrow-right"></i></h5>
+            </div>
+            <div class="grid lg:grid-cols-2 gap-4 mt-3">
                 <a href=""
                     class="w-full bg-white rounded-xl px-5 py-3 gap-3 flex justify-between border-[0.5px] border-opacity-20 border-dark group shadow-sm">
                     <div class="text flex flex-col justify-between">
@@ -223,6 +218,14 @@
                     </div>
                     <img src="dist/img/berita_satpol_pp.jpg" alt="" class="rounded-xl w-4/12 lg:w-3/12 object-cover">
                 </a>
+            </div>
+
+            <!-- BERITA HUKUM -->
+            <div class="flex justify-between mt-6">
+                <h5 class="font-bold text-base md:text-xl lg:text-2xl text-text">Hukum</h5>
+                <h5 class="text-sm md:text-lg lg:text-xl text-text">Lainnya <i class="fa-solid fa-arrow-right"></i></h5>
+            </div>
+            <div class="grid lg:grid-cols-2 gap-4 mt-3">
                 <a href=""
                     class="w-full bg-white rounded-xl px-5 py-3 gap-3 flex justify-between border-[0.5px] border-opacity-20 border-dark group shadow-sm">
                     <div class="text flex flex-col justify-between">
@@ -258,6 +261,14 @@
                     </div>
                     <img src="dist/img/berita_satpol_pp.jpg" alt="" class="rounded-xl w-4/12 lg:w-3/12 object-cover">
                 </a>
+            </div>
+
+            <!-- BERITA OLAHRAGA -->
+            <div class="flex justify-between mt-6">
+                <h5 class="font-bold text-base md:text-xl lg:text-2xl text-text">Olahraga</h5>
+                <h5 class="text-sm md:text-lg lg:text-xl text-text">Lainnya <i class="fa-solid fa-arrow-right"></i></h5>
+            </div>
+            <div class="grid lg:grid-cols-2 gap-4 mt-3">
                 <a href=""
                     class="w-full bg-white rounded-xl px-5 py-3 gap-3 flex justify-between border-[0.5px] border-opacity-20 border-dark group shadow-sm">
                     <div class="text flex flex-col justify-between">
@@ -293,6 +304,14 @@
                     </div>
                     <img src="dist/img/berita_satpol_pp.jpg" alt="" class="rounded-xl w-4/12 lg:w-3/12 object-cover">
                 </a>
+            </div>
+
+            <!-- BERITA INTERNASIONAL -->
+            <div class="flex justify-between mt-6">
+                <h5 class="font-bold text-base md:text-xl lg:text-2xl text-text">Internasional</h5>
+                <h5 class="text-sm md:text-lg lg:text-xl text-text">Lainnya <i class="fa-solid fa-arrow-right"></i></h5>
+            </div>
+            <div class="grid lg:grid-cols-2 gap-4 mt-3">
                 <a href=""
                     class="w-full bg-white rounded-xl px-5 py-3 gap-3 flex justify-between border-[0.5px] border-opacity-20 border-dark group shadow-sm">
                     <div class="text flex flex-col justify-between">
@@ -415,154 +434,23 @@
     </footer>
     <!-- footer end -->
 
-    <div class="modal micromodal-slide" id="modal-darurat" aria-hidden="true">
-        <div class="modal__overlay" tabindex="-1" data-micromodal-close>
-            <div class="modal__container" role="dialog" aria-modal="true" aria-labelledby="modal-darurat-title">
-                <header class="modal__header">
-                    <h2 class="modal__title text-text" id="modal-darurat-title">
-                        Hubungi Polisi
-                    </h2>
-                    <button class="modal__close" aria-label="Close modal" data-micromodal-close></button>
-                </header>
-                <main class="modal__content" id="modal-darurat-content">
-                    <div class="w-full p-4 rounded-md bg-red-500 text-white flex gap-1">
-                        <img src="dist/img/panggilan-darurat.svg" alt="" class="w-16">
-                        <div class="w-full">
-                            <h6 class="text-base md:text-lg font-bold">Panggilan Darurat</h6>
-                            <p class="text-sm md:text-base">Bebas Pulsa</p>
-                            <p class="text-sm md:text-base">Menghubungkan anda dengan nomor darurat Kepolisian 110</p>
-                        </div>
-                    </div>
-                </main>
-            </div>
-        </div>
-    </div>
-
-    <div class="modal micromodal-slide" id="modal-laporan" aria-hidden="true">
-        <div class="modal__overlay" tabindex="-1" data-micromodal-close>
-            <div class="modal__container" role="dialog" aria-modal="true" aria-labelledby="modal-laporan-title">
-                <header class="modal__header">
-                    <h2 class="modal__title text-text" id="modal-1-title">
-                        Buat Laporan
-                    </h2>
-                    <button class="modal__close" aria-label="Close modal" data-micromodal-close></button>
-                </header>
-                <main class="modal__content" id="modal-laporan-content">
-                    <div class="w-full p-4 rounded-md bg-[#fab026] text-white flex gap-2 items-center">
-                        <img src="dist/img/buat-laporan.svg" alt="" class="w-16">
-                        <div class="w-full">
-                            <h6 class="text-base md:text-lg font-bold">Ajukan Laporan</h6>
-                            <p class="text-sm md:text-base">Layanan Pengaduan Masyarakat Online</p>
-                        </div>
-                        <i class="fa-solid fa-circle-arrow-right text-2xl ml-2"></i>
-                    </div>
-                    <div class="mt-6">
-                        <h6 class="font-bold md:mb-2">Tentang Buat Laporan</h6>
-                        <p class="text-sm md:text-base">Buat Laporan adalah layanan yang ditujukan untuk masyarakat agar
-                            dapat melaporkan suatu kejadian tanpa perlu datang ke Polsek.</p>
-                    </div>
-                </main>
-            </div>
-        </div>
-    </div>
-
-    <div class="modal micromodal-slide" id="modal-skck" aria-hidden="true">
-        <div class="modal__overlay" tabindex="-1" data-micromodal-close>
-            <div class="modal__container" role="dialog" aria-modal="true" aria-labelledby="modal-skck-title">
-                <header class="modal__header">
-                    <h2 class="modal__title text-text" id="modal-1-title">
-                        SKCK
-                    </h2>
-                    <button class="modal__close" aria-label="Close modal" data-micromodal-close></button>
-                </header>
-                <main class="modal__content" id="modal-skck-content">
-                    <div class="w-full p-4 rounded-md bg-[#ef6305] text-white flex gap-2 items-center">
-                        <img src="dist/img/skck.svg" alt="" class="w-16">
-                        <div class="w-full">
-                            <h6 class="text-base md:text-lg font-bold">Ajukan SKCK</h6>
-                            <p class="text-sm md:text-base">Pendaftaran SKCK Online</p>
-                        </div>
-                        <i class="fa-solid fa-circle-arrow-right text-2xl ml-2"></i>
-                    </div>
-                    <div class="mt-6">
-                        <h6 class="font-bold md:mb-2">Tentang SKCK</h6>
-                        <p class="text-sm md:text-base">SKCK (Surat Keterangan Catatan Kepolisian) adalah surat
-                            keterangan resmi yang diterbitkan
-                            oleh Polri melalui fungsi Intelkam kepada seorang pemohon/warga masyarakat <span
-                                id="dots">...</span><span id="more">untuk menerangkan
-                                tentang ada ataupun tidak adanya catatan suatu individu atau seseorang yang
-                                bersangkutan
-                                dalam kegiatan kriminalitas atau kejahatan.
-                                <br><br>
-                                Contoh keperluan yang mensyaratkan SKCK sebagai
-                                kelengkapannya antara lain:
-                                <br>
-                                - Melamar pekerjaan Swasta
-                                <br>
-                                - Melamar sebagai PNS
-                                <br>
-                                - Melamar sebagai TNI/POLRI
-                                <br>
-                                - Pindah alamat
-                                <br>
-                                - Melanjutkan pendidikan
-                                <br>
-                                - Menerbitkan Visa
-                            </span></p>
-
-                        <button onclick="read_more()" id="btn_more"
-                            class="inline text-primary text-sm">Selengkapnya</button>
-                    </div>
-
-                    <div class="mt-6">
-                        <h6 class="font-bold md:mb-2">Syarat & Ketentuan</h6>
-                        <p class="text-sm md:text-base">Syarat dan ketentuan serta keperluan pembuatan SKCK
-                            dimasing-masing tingkat kewenangan</p>
-                    </div>
-
-                    <div class="w-full p-4 rounded-md flex gap-2 items-center mt-4 border-[1px]">
-                        <div class="w-full">
-                            <h6 class="text-base md:text-lg font-bold">Mabes Polri</h6>
-                            <p class="text-sm md:text-base">Pembuatan SKCK di Mabes Polri</p>
-                        </div>
-                        <i class="fa-solid fa-circle-arrow-right text-2xl ml-2"></i>
-                    </div>
-
-                    <div class="w-full p-4 rounded-md flex gap-2 items-center mt-2 border-[1px]">
-                        <div class="w-full">
-                            <h6 class="text-base md:text-lg font-bold">Polda</h6>
-                            <p class="text-sm md:text-base">Pembuatan SKCK di Polda</p>
-                        </div>
-                        <i class="fa-solid fa-circle-arrow-right text-2xl ml-2"></i>
-                    </div>
-
-                    <div class="w-full p-4 rounded-md flex gap-2 items-center mt-2 border-[1px]">
-                        <div class="w-full">
-                            <h6 class="text-base md:text-lg font-bold">Polres</h6>
-                            <p class="text-sm md:text-base">Pembuatan SKCK di Polres</p>
-                        </div>
-                        <i class="fa-solid fa-circle-arrow-right text-2xl ml-2"></i>
-                    </div>
-
-                    <div class="w-full p-4 rounded-md flex gap-2 items-center mt-2 border-[1px]">
-                        <div class="w-full">
-                            <h6 class="text-base md:text-lg font-bold">Polsek</h6>
-                            <p class="text-sm md:text-base">Pembuatan SKCK di Polsek</p>
-                        </div>
-                        <i class="fa-solid fa-circle-arrow-right text-2xl ml-2"></i>
-                    </div>
-                </main>
-            </div>
-        </div>
-    </div>
-
     <!-- Jquery -->
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-    <!-- Init Modal -->
-    <script type="module" src="https://unpkg.com/micromodal/dist/micromodal.min.js"></script>
-    <script type="module">
-        MicroModal.init({
-            disableScroll: true, // [6]
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script>
+        const swiper = new Swiper('.swiper', {
+            // Optional parameters
+            loop: true,
+
+            // If we need pagination
+            pagination: {
+                el: '.swiper-pagination',
+            },
+
+            // autoplay: {
+            //     delay: 3000,
+            // },
         });
     </script>
     <!-- Custom Javascript -->
