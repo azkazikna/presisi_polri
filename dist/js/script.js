@@ -1,6 +1,3 @@
-import MicroModal from '../../node_modules/micromodal/dist/micromodal.es.js';  // es6 module
-MicroModal.init();
-
 // navbar fixed
 window.onscroll = function() {
     const header = document.querySelector('header');
