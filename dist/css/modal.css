@@ -22,12 +22,12 @@
 .modal__container {
   background-color: #fff;
   padding: 30px;
-  max-width: 500px;
-  max-height: 100vh;
+  max-width: 97vh;
+  max-height: 97vh;
   border-radius: 4px;
   overflow-y: auto;
   box-sizing: border-box;
-  margin: 5px;
+  margin: 8px;
 }
 
 .modal__header {
