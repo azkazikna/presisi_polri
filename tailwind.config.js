@@ -15,7 +15,7 @@ module.exports = {
         text: '#312f2f',
       },
       fontFamily: {
-        montserrat: ["SF UI Text Regular"],
+        helvetica: ["Helvetica"],
       },
     },
     height: {
