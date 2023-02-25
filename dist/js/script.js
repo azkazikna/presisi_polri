@@ -1,6 +1,3 @@
-MicroModal.init({
-    disableScroll: true, // [6]
-});
 // navbar fixed
 window.onscroll = function() {
     const header = document.querySelector('header');

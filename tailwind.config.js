@@ -15,7 +15,7 @@ module.exports = {
         text: '#312f2f',
       },
       fontFamily: {
-        helvetica: ["Helvetica"],
+        quicksand: ["'Quicksand'", "sans-serif"],
       },
     },
     height: {

@@ -11,7 +11,10 @@
     <!-- Font Awesome 5 -->
     <script src="https://kit.fontawesome.com/27e42df87e.js" crossorigin="anonymous"></script>
     <!-- Font -->
-    <link rel="stylesheet" href="dist/css/font.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
     <!-- Modal -->
     <link rel="stylesheet" href="dist/css/modal.css">
     <!-- main style -->
@@ -35,10 +38,10 @@
     </script>
 </head>
 
-<body class="font-helvetica bg-[#f7f7f7]">
+<body class="font-quicksand bg-[#f7f7f7]">
     <!-- Header Start -->
     <header
-        class="bg-[#040D94] absolute top-0 left-0 w-full flex items-center justify-evenly z-index-10 transition duration-500 py-5 lg:py-4">
+        class="bg-primary absolute top-0 left-0 w-full flex items-center justify-evenly z-index-10 transition duration-500 py-5 lg:py-4">
         <div class="container max-w-screen-xl lg:px-7">
             <div class="flex items-center justify-between relative">
                 <div class="px-4">
@@ -95,8 +98,8 @@
                 src="https://maps.google.com/maps?q=SMK%20PLUS%20PELITA%20NUSANTARA&t=&z=13&ie=UTF8&iwloc=&output=embed"
                 frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
             <div class="flex justify-between p-2 font-semibold bg-white rounded-b-xl text-sm shadow-md text-secondary">
-                <a href="" class="text-text">Info Lokasi Rawan</a>
-                <a href="">SELENGKAPNYA</a>
+                <a href="" class="text-text text-xs md:text-sm">Info Lokasi Rawan</a>
+                <a href="" class="text-text text-xs md:text-sm">SELENGKAPNYA</a>
             </div>
             <br>
         </div>
@@ -523,6 +526,11 @@
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <!-- Init Modal -->
     <script type="module" src="https://unpkg.com/micromodal/dist/micromodal.min.js"></script>
+    <script type="module">
+        MicroModal.init({
+            disableScroll: true, // [6]
+        });
+    </script>
     <!-- Custom Javascript -->
     <script type="module" src="dist/js/script.js"></script>
 </body>

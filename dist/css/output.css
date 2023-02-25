@@ -989,12 +989,8 @@ video {
   text-align: center;
 }
 
-.font-helvetica {
-  font-family: Helvetica;
-}
-
-.font-sans {
-  font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+.font-quicksand {
+  font-family: 'Quicksand', sans-serif;
 }
 
 .text-2xl {
@@ -1147,9 +1143,9 @@ video {
 
 .navbar-fixed {
   position: fixed;
-  z-index: 99999;
+  z-index: 999;
   --tw-bg-opacity: 1;
-  background-color: rgb(4 13 148 / var(--tw-bg-opacity));
+  background-color: rgb(9 22 142 / var(--tw-bg-opacity));
   --tw-backdrop-blur: blur(4px);
   -webkit-backdrop-filter: var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia);
           backdrop-filter: var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia);
