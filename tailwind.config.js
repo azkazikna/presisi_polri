@@ -15,7 +15,7 @@ module.exports = {
         text: '#312f2f',
       },
       fontFamily: {
-        poppins: ["Poppins", 'sans-serif'],
+        montserrat: ["SF UI Text Regular"],
       },
     },
     height: {

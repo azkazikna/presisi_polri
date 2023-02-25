@@ -1,17 +1,15 @@
+import MicroModal from '../../node_modules/micromodal/dist/micromodal.es.js';  // es6 module
+MicroModal.init();
+
 // navbar fixed
 window.onscroll = function() {
     const header = document.querySelector('header');
     const fixedNav = header.offsetTop;
-    const toTop = document.getElementById('toTop');
 
     if(window.pageYOffset > fixedNav) {
         header.classList.add('navbar-fixed');
-        toTop.classList.remove('hidden');
-        toTop.classList.add('flex');
     } else {
         header.classList.remove('navbar-fixed');
-        toTop.classList.remove('flex');
-        toTop.classList.add('hidden');
     }
 }
 
@@ -32,5 +30,17 @@ window.addEventListener('click', function(e) {
     if(e.target != hamburger && e.target != navMenu) {
         hamburger.classList.remove('hamburger-active');
         navMenu.classList.add('hidden');
+    }
+});
+
+// Toggle see password
+$(".toggle-password").click(function() {
+
+    $(this).toggleClass("fa-eye-slash");
+    var input = $($(this).attr("toggle"));
+    if (input.attr("type") == "password") {
+      input.attr("type", "text");
+    } else {
+      input.attr("type", "password");
     }
 });

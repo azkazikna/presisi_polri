@@ -10,11 +10,32 @@
 
     <!-- Font Awesome 5 -->
     <script src="https://kit.fontawesome.com/27e42df87e.js" crossorigin="anonymous"></script>
+    <!-- Font -->
+    <link rel="stylesheet" href="dist/css/font.css">
+    <!-- Modal -->
+    <link rel="stylesheet" href="dist/css/modal.css">
     <!-- main style -->
     <link rel="stylesheet" href="dist/css/output.css">
+    <script>
+        function read_more() {
+            var dots = document.getElementById("dots");
+            var moreText = document.getElementById("more");
+            var btnText = document.getElementById("btn_more");
+
+            if (dots.style.display === "none") {
+                dots.style.display = "inline";
+                btnText.innerHTML = "Selengkapnya";
+                moreText.style.display = "none";
+            } else {
+                dots.style.display = "none";
+                btnText.innerHTML = "Sembunyikan";
+                moreText.style.display = "inline";
+            }
+        }
+    </script>
 </head>
 
-<body class="font-sans bg-[#f7f7f7]">
+<body class="font-montserrat bg-[#f7f7f7]">
     <!-- Header Start -->
     <header
         class="bg-[#040D94] absolute top-0 left-0 w-full flex items-center justify-evenly z-index-10 transition duration-500 py-5 lg:py-4">
@@ -89,15 +110,17 @@
             <p class="mt-2 text-sm md:text-base">Pilih layanan yang Anda butuhkan</p>
             <div
                 class="grid grid-cols-4 md:grid-cols-6 lg:grid-cols-7 xl:grid-cols-8 mt-5 content-center gap-8 lg:gap-10">
-                <a class="text-center flex flex-col justify-between hover:brightness-75 transition" href="">
+                <a class="text-center flex flex-col justify-between hover:brightness-75 transition"
+                    data-micromodal-trigger="modal-darurat" href="javascript:;">
                     <img src="dist/img/panggilan-darurat.svg" alt="">
                     <p class="font-bold mt-2 text-text text-sm md:text-base">Panggilan Darurat</p>
                 </a>
-                <a class="text-center flex flex-col justify-between hover:brightness-75 transition" href="">
+                <a class="text-center flex flex-col justify-between hover:brightness-75 transition">
                     <img src="dist/img/buat-laporan.svg" alt="">
                     <p class="font-bold mt-2 text-text text-sm md:text-base">Buat Laporan</p>
                 </a>
-                <a class="text-center flex flex-col justify-between hover:brightness-75 transition" href="">
+                <a class="text-center flex flex-col justify-between hover:brightness-75 transition"
+                    data-micromodal-trigger="modal-skck" href="javascript:;">
                     <img src="dist/img/skck.svg" alt="">
                     <p class="font-bold mt-2 text-text text-sm md:text-base">SKCK</p>
                 </a>
@@ -386,8 +409,89 @@
     </footer>
     <!-- footer end -->
 
+    <div class="modal micromodal-slide" id="modal-darurat" aria-hidden="true">
+        <div class="modal__overlay" tabindex="-1" data-micromodal-close>
+            <div class="modal__container" role="dialog" aria-modal="true" aria-labelledby="modal-darurat-title">
+                <header class="modal__header">
+                    <h2 class="modal__title text-text" id="modal-darurat-title">
+                        Hubungi Polisi
+                    </h2>
+                    <button class="modal__close" aria-label="Close modal" data-micromodal-close></button>
+                </header>
+                <main class="modal__content" id="modal-darurat-content">
+                    <div class="w-full p-4 rounded-md bg-red-500 text-white flex gap-1">
+                        <img src="dist/img/panggilan-darurat.svg" alt="" class="w-16">
+                        <div class="w-full">
+                            <h6 class="text-base md:text-lg font-bold">Panggilan Darurat</h6>
+                            <p class="text-sm md:text-base">Bebas Pulsa</p>
+                            <p class="text-sm md:text-base">Menghubungkan anda dengan nomor darurat Kepolisian 110</p>
+                        </div>
+                    </div>
+                </main>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal micromodal-slide" id="modal-skck" aria-hidden="true">
+        <div class="modal__overlay" tabindex="-1" data-micromodal-close>
+            <div class="modal__container" role="dialog" aria-modal="true" aria-labelledby="modal-skck-title">
+                <header class="modal__header">
+                    <h2 class="modal__title text-text" id="modal-1-title">
+                        SKCK
+                    </h2>
+                    <button class="modal__close" aria-label="Close modal" data-micromodal-close></button>
+                </header>
+                <main class="modal__content" id="modal-skck-content">
+                    <div class="w-full p-4 rounded-md bg-[#ef6305] text-white flex gap-2 items-center">
+                        <img src="dist/img/skck.svg" alt="" class="w-16">
+                        <div class="w-full">
+                            <h6 class="text-base md:text-lg font-bold">Ajukan SKCK</h6>
+                            <p class="text-sm md:text-base">Pendaftaran SKCK Online</p>
+                        </div>
+                    </div>
+                    <div class="mt-6">
+                        <h6 class="font-bold md:mb-2">Tentang SKCK</h6>
+                        <p class="text-sm md:text-base">SKCK (Surat Keterangan Catatan Kepolisian) adalah surat
+                            keterangan resmi yang diterbitkan
+                            oleh Polri melalui fungsi Intelkam kepada seorang pemohon/warga masyarakat <span
+                                id="dots">...</span><span id="more">untuk menerangkan
+                                tentang ada ataupun tidak adanya catatan suatu individu atau seseorang yang
+                                bersangkutan
+                                dalam kegiatan kriminalitas atau kejahatan.
+                                <br><br>
+                                Contoh keperluan yang mensyaratkan SKCK sebagai
+                                kelengkapannya antara lain:
+                                <br>
+                                - Melamar pekerjaan Swasta
+                                <br>
+                                - Melamar sebagai PNS
+                                <br>
+                                - Melamar sebagai TNI/POLRI
+                                <br>
+                                - Pindah alamat
+                                <br>
+                                - Melanjutkan pendidikan
+                                <br>
+                                - Menerbitkan Visa
+                            </span></p>
+
+                        <button onclick="read_more()" id="btn_more" class="inline text-primary">Selengkapnya</button>
+                    </div>
+
+                    <div class="mt-6">
+                        <h6 class="font-bold md:mb-2">Syarat & Ketentuan</h6>
+                        <p class="text-sm md:text-base">Syarat dan ketentuan serta keperluan pembuatan SKCK
+                            dimasing-masing tingkat kewenangan</p>
+                    </div>
+                </main>
+            </div>
+        </div>
+    </div>
+
+    <!-- Jquery -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <!-- Custom Javascript -->
-    <script src="dist/js/script.js"></script>
+    <script type="module" src="dist/js/script.js"></script>
 </body>
 
 </html>
