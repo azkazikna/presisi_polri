@@ -41,7 +41,8 @@
 <body class="font-quicksand bg-[#f7f7f7]">
     <!-- Header Start -->
     <header
-        class="bg-primary absolute top-0 left-0 w-full flex items-center justify-evenly z-index-10 transition duration-500 py-5 lg:py-4">
+        class="bg-cover md:bg-top absolute top-0 left-0 w-full flex items-center justify-evenly z-index-10 transition duration-500 py-5 lg:py-4"
+        style="background-image: url('./dist/img/bg-pattern.png');">
         <div class="container max-w-screen-xl lg:px-7">
             <div class="flex items-center justify-between relative">
                 <div class="px-4">
@@ -87,10 +88,10 @@
     <!-- Header End -->
 
     <!-- Map and Jumbotron Start -->
-    <div class="h-30v w-full bg-primary">
+    <div class="h-20v md:h-30v w-full bg-cover md:bg-top" style="background-image: url('./dist/img/bg-pattern.png');">
     </div>
-    <div class="w-full mt-[-150px] overflow-hidden flex justify-center">
-        <div class="gmap_canvas"><iframe class="w-[90vw] md:w-[80vw] h-[200px] md:h-[300px] rounded-t-xl"
+    <div class="w-full mt-[-100px] md:mt-[-150px] overflow-hidden flex justify-center">
+        <div class="gmap_canvas"><iframe class="w-[90vw] md:w-[80vw] h-[150px] md:h-[300px] rounded-t-xl"
                 id="gmap_canvas"
                 src="https://maps.google.com/maps?q=SMK%20PLUS%20PELITA%20NUSANTARA&t=&z=13&ie=UTF8&iwloc=&output=embed"
                 frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
@@ -446,14 +447,15 @@
                     <button class="modal__close" aria-label="Close modal" data-micromodal-close></button>
                 </header>
                 <main class="modal__content" id="modal-laporan-content">
-                    <div class="w-full p-4 rounded-md bg-[#fab026] text-white flex gap-2 items-center">
+                    <a class="w-full p-4 rounded-md bg-[#fab026] text-white flex gap-2 items-center"
+                        href="form_laporan_pengaduan.html">
                         <img src="dist/img/buat-laporan.svg" alt="" class="w-16">
                         <div class="w-full">
                             <h6 class="text-base md:text-lg font-bold">Ajukan Laporan</h6>
                             <p class="text-sm md:text-base">Layanan Pengaduan Masyarakat Online</p>
                         </div>
                         <i class="fa-solid fa-circle-arrow-right text-2xl ml-2"></i>
-                    </div>
+                    </a>
                     <div class="mt-6">
                         <h6 class="font-bold md:mb-2">Tentang Buat Laporan</h6>
                         <p class="text-sm md:text-base">Buat Laporan adalah layanan yang ditujukan untuk masyarakat agar
@@ -476,14 +478,15 @@
                     <button class="modal__close" aria-label="Close modal" data-micromodal-close></button>
                 </header>
                 <main class="modal__content" id="modal-skck-content">
-                    <div class="w-full p-4 rounded-md bg-[#ef6305] text-white flex gap-2 items-center">
+                    <a class="w-full p-4 rounded-md bg-[#ef6305] text-white flex gap-2 items-center"
+                        data-micromodal-trigger="modal-ajukan-skck" href="javascript:;">
                         <img src="dist/img/skck.svg" alt="" class="w-16">
                         <div class="w-full">
                             <h6 class="text-base md:text-lg font-bold">Ajukan SKCK</h6>
                             <p class="text-sm md:text-base">Pendaftaran SKCK Online</p>
                         </div>
                         <i class="fa-solid fa-circle-arrow-right text-2xl ml-2"></i>
-                    </div>
+                    </a>
                     <div class="mt-6">
                         <h6 class="font-bold md:mb-2">Tentang SKCK</h6>
                         <p class="text-sm md:text-base">SKCK (Surat Keterangan Catatan Kepolisian) adalah surat
@@ -555,6 +558,37 @@
                         </div>
                         <i class="fa-solid fa-circle-arrow-right text-2xl ml-2"></i>
                     </a>
+                </main>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal micromodal-slide" id="modal-ajukan-skck" aria-hidden="true">
+        <div class="modal__overlay" tabindex="-1" data-micromodal-close>
+            <div class="modal__container" role="dialog" aria-modal="true" aria-labelledby="modal-ajukan-skck-title">
+                <header class="modal__header">
+                    <h2 class="modal__title text-text" id="modal-1-title">
+                        Ajukan SKCK
+                    </h2>
+                    <button class="modal__close" aria-label="Close modal" data-micromodal-close></button>
+                </header>
+                <main class="modal__content" id="modal-ajukan-skck-content">
+                    <h6 class="font-bold md:mb-2 mt-6 text-sm md:text-base">Biaya</h6>
+                    <p class="text-sm md:text-base">Rp30,000</p>
+                    <h6 class="font-bold md:mb-2 mt-6 text-sm md:text-base">Lampiran Dokumen</h6>
+                    <ul class="text-sm md:text-base">
+                        <li>- Pas foto ukuran 4x6</li>
+                        <li>- Foto berpakaian sopan dan berkerah</li>
+                        <li>- Kartu Keluarga (KK)</li>
+                        <li>- Akte lahir atau ijazah (salah satu)</li>
+                    </ul>
+                    <h6 class="font-bold md:mb-2 mt-6 text-sm md:text-base">Waktu Proses</h6>
+                    <p class="text-sm md:text-base">1 hari kerja</p>
+                    <h6 class="font-bold md:mb-2 mt-6 text-sm md:text-base">Pengambilan</h6>
+                    <p class="text-sm md:text-base">Kantor polisi sesuai tingkat kewenangan yang dipilih</p>
+
+                    <a class="py-3 md:py-4 w-full bg-[#ef6305] font-bold mt-8 rounded-xl text-white block text-center"
+                        href="form_skck.html">Mulai</a>
                 </main>
             </div>
         </div>
