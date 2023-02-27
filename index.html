@@ -574,19 +574,40 @@
                     <button class="modal__close" aria-label="Close modal" data-micromodal-close></button>
                 </header>
                 <main class="modal__content" id="modal-ajukan-skck-content">
-                    <h6 class="font-bold md:mb-2 mt-6 text-sm md:text-base">Biaya</h6>
-                    <p class="text-sm md:text-base">Rp30,000</p>
-                    <h6 class="font-bold md:mb-2 mt-6 text-sm md:text-base">Lampiran Dokumen</h6>
-                    <ul class="text-sm md:text-base">
-                        <li>- Pas foto ukuran 4x6</li>
-                        <li>- Foto berpakaian sopan dan berkerah</li>
-                        <li>- Kartu Keluarga (KK)</li>
-                        <li>- Akte lahir atau ijazah (salah satu)</li>
-                    </ul>
-                    <h6 class="font-bold md:mb-2 mt-6 text-sm md:text-base">Waktu Proses</h6>
-                    <p class="text-sm md:text-base">1 hari kerja</p>
-                    <h6 class="font-bold md:mb-2 mt-6 text-sm md:text-base">Pengambilan</h6>
-                    <p class="text-sm md:text-base">Kantor polisi sesuai tingkat kewenangan yang dipilih</p>
+                    <div class="flex flex-row gap-3 mt-6">
+                        <img src="dist/icons/wallet.png" alt="" class="w-7 h-[28px]">
+                        <div class="flex flex-col">
+                            <h6 class="font-bold md:mb-2 text-sm md:text-base">Biaya</h6>
+                            <p class="text-sm md:text-base">Rp30,000</p>
+                        </div>
+                    </div>
+                    <div class="flex flex-row gap-3 mt-6">
+                        <img src="dist/icons/doc.png" alt="" class="w-7 h-[28px]">
+                        <div class="flex flex-col">
+                            <h6 class="font-bold md:mb-2 text-sm md:text-base">Lampiran Dokumen</h6>
+                            <ul class="text-sm md:text-base list-inside"
+                                style="list-style-image: url('dist/icons/check.png');">
+                                <li>Pas foto ukuran 4x6</li>
+                                <li>Foto berpakaian sopan dan berkerah</li>
+                                <li>Kartu Keluarga (KK)</li>
+                                <li>Akte lahir atau ijazah (salah satu)</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="flex flex-row gap-3 mt-6">
+                        <img src="dist/icons/time.png" alt="" class="w-7 h-[28px]">
+                        <div class="flex flex-col">
+                            <h6 class="font-bold md:mb-2 text-sm md:text-base">Waktu Proses</h6>
+                            <p class="text-sm md:text-base">1 hari kerja</p>
+                        </div>
+                    </div>
+                    <div class="flex flex-row gap-3 mt-6">
+                        <img src="dist/icons/box.png" alt="" class="w-7 h-[28px]">
+                        <div class="flex flex-col">
+                            <h6 class="font-bold md:mb-2 text-sm md:text-base">Pengambilan</h6>
+                            <p class="text-sm md:text-base">Kantor polisi sesuai tingkat kewenangan yang dipilih</p>
+                        </div>
+                    </div>
 
                     <a class="py-3 md:py-4 w-full bg-[#ef6305] font-bold mt-8 rounded-xl text-white block text-center"
                         href="form_skck.html">Mulai</a>
